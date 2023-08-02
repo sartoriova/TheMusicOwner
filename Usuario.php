@@ -43,8 +43,8 @@
 
         public static function cadastrar($nome, $email, $senha, $nomeUser, $imgAvatar){
             try{
-                $nomeUser = "LOVETHEMUSICOWNER"
-                $imgAvatar = "imagens/imgAvatarDefault.jpeg"
+                $nomeUser = "LOVETHEMUSICOWNER";
+                $imgAvatar = "imagens/imgAvatarDefault.jpeg";
                 $senhaCriptografada = password_hash($senha, PASSWORD_BCRYPT);
 
                 $conexao = Conexao::getConexao();
