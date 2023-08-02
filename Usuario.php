@@ -44,11 +44,12 @@
         public static function cadastrar($nome, $email, $senha, $nomeUser, $imgAvatar){
             try{
                 $nomeUser = "LOVETHEMUSICOWNER"
+                $imgAvatar = 
                 $senhaCriptografada = password_hash($senha, PASSWORD_BCRYPT);
 
                 $conexao = Conexao::getConexao();
                 $sql = $conexao->prepare("
-                    insert into usuario (nome, email, senha, nomeUser, imgAvatar) values (?, ?, ?, ?, ?, ?)
+                    insert into usuario (nome, email, senha, nomeUser, imgAvatar) values (?, ?, ?, ?, ?)
                 ");
                 $sql->execute([$nome, $email, $senhaCriptografada, $nomeUser, $imgAvatar]);
 
@@ -122,11 +123,11 @@
             }
         }
 
-        public static function alterar($id, $nome, $email, $telefone, $senhaAtual, $senhaNova){
+        public static function alterar($id, $nome, $email, $senhaAtual, $senhaNova, $nomeUser, $imgAvatar){
             try{
                 $conexao = Conexao::getConexao();
                 $sql = $conexao->prepare("
-                    select * from veterinario where Id = ?
+                    select * from usuario where id = ?
                 ");
                 $sql->execute([$id]);
 
@@ -136,9 +137,9 @@
                     $senhaCriptografada = password_hash($senhaNova, PASSWORD_BCRYPT);
 
                     $sql1 = $conexao->prepare("
-                        update veterinario set Nome = ?, Email = ?, Telefone = ?, Senha = ? where Id = ?
+                        update usuario set nome = ?, email = ?, nomeUser = ?, imgAvatar = ? where id = ?
                     ");
-                    $sql1->execute([$nome, $email, $telefone, $senhaCriptografada, $id]);
+                    $sql1->execute([$nome, $email, $senhaCriptografada, $nomeUser, $imgAvatar, $id]);
 
                     if($sql1->rowCount() > 0){
                         return true;
@@ -159,10 +160,10 @@
                 $conexao = Conexao::getConexao();
 
                 $sql = $conexao->prepare("
-                    delete from consulta where Id_Veterinario = ?
+                    delete from partida where iduser = ?
                 ");
                 $sql1 = $conexao->prepare("
-                    delete from veterinario where Id = ?
+                    delete from usuario where id = ?
                 ");
 
                 $sql->execute([$id]);
