@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login The Music Owner</title>
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya Like A Sister&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/telaCadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     
+
+  
+    <script>
+        function togglePasswordVisibility() {
+          var passwordInput = document.getElementById("password");
+          var eyeIcon = document.getElementById("eye-icon");
+      
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            eyeIcon.classList.remove("fa-eye");
+            eyeIcon.classList.add("fa-eye-slash");
+          } else {
+            passwordInput.type = "password";
+            eyeIcon.classList.remove("fa-eye-slash");
+            eyeIcon.classList.add("fa-eye");
+          }
+        } 
+      </script>     
+</head>
+<body>
+   
+
+
+    
+        <header>
+            
+          <img class="header-image" src="../img/pji2.png" alt="Imagem no Cabeçalho">
+          <div class="header-text">
+             <h1>THE MUSIC OWNER</h1>
+             </div>
+            
+           
+        </header>
+        <section>
+            <br>
+            <form>   
+            
+                                      
+                    <div class="text-block">
+                            <h3>
+                            <label for="fname">Nome:</label> <br>
+
+                            
+                            <input type="text" id="text" placeholder="Digite seu Nome">
+                            <br>
+                            <br>
+                            <label for="fname">E-mail:</label> <br>
+
+                            
+                            <input type="text" id="text" placeholder="Digite seu E-mail">
+                            <br>
+                            <br>
+                            <label for="fname">Senha:</label> <br>
+                            <div class="password-input">
+                            <input type="password" id="password" placeholder="Digite sua Senha">
+                            <i id="eye-icon" class="fas fa-eye eye-icon" onclick="togglePasswordVisibility()"></i>
+                            </div>
+                            <br>
+                            <br>
+                             
+                              <center>
+                            
+                              <button class="my-button">Cadastrar-se</button> </center>
+                            </h3></div>
+                          
+
+
+
+                     
+                   
+                       
+                  </div>
+                
+            </form>    
+            </div> 
+            
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
