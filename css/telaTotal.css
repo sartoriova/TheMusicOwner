@@ -1,0 +1,101 @@
+html, body{
+  font-family:Verdana;
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}section{
+
+
+
+    /* grid-row: 2/3;
+        grid-column: 1/3; */
+        background-image: url("../img/fundoDeTela.png");
+    
+    
+    
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; /*Mantém a imagem fixa enquanto a página é rolada */
+    
+        /* background-color: rgba(255, 0, 91.80000364780426, 0.7099999785423279); */
+        /* padding: 35px; */
+        min-height: 100vh;
+        border-top: 4px solid #fff;
+      /* border-bottom: 2px solid #fff;  */
+ 
+    
+
+    
+}.my-button {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px;    /* Tamanho da fonte */
+    background-color:rgba(21.010938361287117, 0, 150.0781300663948, 1);
+	color:rgba(255, 255, 255, 1);
+    border: none;       /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;    /* Cursor de mão quando hover */
+    font-family:PT Mono;
+   
+   
+}
+
+    header {
+      font-size: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:rgb(147.07695990800858, 0, 150.0781300663948, 1);
+      color: #fff;
+      padding: 0px;
+      height: 90px;
+      text-align: center;
+      position: relative;
+      font-family: Love Ya Like A Sister;
+    }
+    .left-icon,
+    .center-icon {
+      font-size: 24px; /* Tamanho do ícone */
+    }
+    .right-icon{
+      font-size: 45px;
+    }
+  
+     
+    
+  .text-block {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 400px;
+    height: 510px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: rgba(59.81432318687439, 243.31249594688416, 188.26304107904434, 1);
+    font-family:Cuprum;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+  }
+  h2{
+    text-align: center;
+    font-family:Love Ya Like A Sister;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table, th, td {
+    border: 1px;
+  }
+
+  th, td {
+    
+    text-align: center;
+  }
+
+  .transparent {
+    background-color: transparent;
+  }
+h1{
+  font-size: 24px; 
+  font-family: Love Ya Like A Sister;
+}
