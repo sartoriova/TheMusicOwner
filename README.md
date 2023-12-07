@@ -1,6 +1,6 @@
 # The Music Owner
 
-TCC do meu curso de TII que ainda está em desenvolvimento =)
+Projeto Integrador ("TCC") do meu curso de TII que foi finalizado no ano de 2023 =)
 
 Front-end: Laura Pagliuzo
 
